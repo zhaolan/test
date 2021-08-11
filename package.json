@@ -4,7 +4,8 @@
   "description": "test submodule push checkout branch consistent",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/zhaolan/test/issues"
   },
-  "homepage": "https://github.com/zhaolan/test#readme"
+  "homepage": "https://github.com/zhaolan/test#readme",
+  "devDependencies": {
+    "husky": "^7.0.0"
+  }
 }
