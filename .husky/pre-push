@@ -1,0 +1,20 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+WORK_DIR=$(pwd)
+
+PUSH_PATHS=("/one" "/two")
+
+
+for relativePath in ${PUSH_PATHS[*]}
+  do
+    cd $WORK_DIR$relativePath
+    git pull --rebase
+    git push
+
+    echo "push to $relativePath success"
+  done
+
+echo "push all submodule success"
+
