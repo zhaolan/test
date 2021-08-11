@@ -1,0 +1,24 @@
+{
+  "name": "submodule-hooks",
+  "version": "1.0.0",
+  "description": "test submodule push checkout branch consistent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaolan/test.git"
+  },
+  "keywords": [
+    "submodule",
+    "husky",
+    "hook"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaolan/test/issues"
+  },
+  "homepage": "https://github.com/zhaolan/test#readme"
+}
