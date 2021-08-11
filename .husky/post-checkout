@@ -1,0 +1,16 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+prevHEAD=$1
+newHEAD=$2
+checkoutType=$3
+checkoutBranch=$4
+
+echo "12334556890-"
+echo $prevHEAD
+echo $newHEAD
+echo $checkoutType
+echo $checkoutBranch
+echo "12334556890-"
+
+

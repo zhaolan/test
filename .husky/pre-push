@@ -7,14 +7,7 @@ WORK_DIR=$(pwd)
 PUSH_PATHS=("/one" "/two")
 
 
-for relativePath in ${PUSH_PATHS[*]}
-  do
-    cd $WORK_DIR$relativePath
-    git pull --rebase
-    git push
-
-    echo "push to $relativePath success"
-  done
+git submodule foreach git push
 
 echo "push all submodule success"
 
